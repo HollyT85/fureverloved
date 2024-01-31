@@ -94,6 +94,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://8000-hollyt85-fureverloved-tnzu4vrihgw.ws-eu107.gitpod.io/*'
 ]
 
+
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
