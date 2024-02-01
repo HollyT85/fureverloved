@@ -15,7 +15,7 @@ class Species(models.Model):
     species = models.CharField(max_length=100, blank=False)
     care_info = models.TextField(blank=True)
     image = models.ImageField(
-        upload_to='images/', default='', blank=False
+        upload_to='images/', default='../coming_soon', blank=False
     )
     friendly_name = models.CharField(max_length=100, null=True, blank=True)
 
@@ -46,7 +46,7 @@ class AvailableAdoption(models.Model):
     age = models.CharField(max_length=10, blank=False)
     gender = models.CharField(max_length=1, blank=False)
     image = models.ImageField(
-        upload_to='images/', default='', blank=True
+        upload_to='images/', default='../coming_soon', blank=True
     )
     information = models.TextField(blank=False)
     status = models.CharField(max_length=30, choices=STATUS, default='available to adopt')
