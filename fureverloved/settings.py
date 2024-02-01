@@ -29,7 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-hollyt85-fureverloved-tnzu4vrihgw.ws-eu107.gitpod.io']
+ALLOWED_HOSTS = [
+    '8000-hollyt85-fureverloved-tnzu4vrihgw.ws-eu107.gitpod.io', '127.0.0.1']
 
 
 # Application definition
@@ -43,12 +44,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
-    #allauth
+    # allauth
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
 
-    #site apps
+    # site apps
     'about',
     'availableforadoption',
     'contactus',
@@ -81,7 +82,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth')
-            ],
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
